@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>micro-service-frame</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>micro-service-starter</artifactId>
+
+    <dependencies>
+        <!-- Common Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Discovery Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-discovery</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Database Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-database</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Redis Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-redis</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- MQ Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-mq</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- RPC Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-rpc</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Logging Module -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>micro-service-logging</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project> 

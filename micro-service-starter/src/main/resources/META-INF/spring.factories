@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.example.starter.config.MQAutoConfiguration,\
+com.example.starter.config.RedisAutoConfiguration,\
+com.example.starter.config.DatabaseAutoConfiguration,\
+com.example.starter.config.RPCAutoConfiguration,\
+com.example.starter.config.DiscoveryAutoConfiguration,\
+com.example.starter.config.LoggingAutoConfiguration 

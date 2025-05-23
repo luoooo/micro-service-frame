@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: ${spring.application.name:micro-service}
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        instance-id: ${spring.application.name}:${random.value}
+        prefer-ip-address: true
+        health-check-path: /actuator/health
+        health-check-interval: 15s
+      config:
+        enabled: true
+        prefix: config
+        default-context: application
+        profile-separator: '-'
+        data-key: data
+
+server:
+  port: ${server.port:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always 
